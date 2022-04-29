@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import { ICard } from "../../types/cards";
 import { IconComponent } from "../IconComponent/IconComponent";
 import { ICON_MAP, EIconTypes } from "../IconComponent/IconFactory";
@@ -31,8 +31,9 @@ export const DropDown: React.FC<IInputSelect> = (props) => {
             <div
               className="dropdown__item"
               key={ name.typeName }
-              onClick={ (event: any) => {
-                getValueSelect(event.target.innerText, name);
+              onClick={ (event: MouseEvent<HTMLDivElement>) => {
+                const innerText = event.target as HTMLElement;
+                getValueSelect(innerText.innerText, name);
                 setIsActive((isActive) => !isActive);
               } }
             >

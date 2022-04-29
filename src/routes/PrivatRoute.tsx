@@ -3,7 +3,6 @@ import { Route, RouteProps, Routes } from "react-router-dom";
 
 interface IProps extends RouteProps {
   children?: React.ReactElement;
-
   [key: string]: any;
 }
 
