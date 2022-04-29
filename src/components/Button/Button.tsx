@@ -1,4 +1,7 @@
 import React from "react";
+import classnames from 'classnames/bind';
+
+import styles from './Button.module.scss';
 
 interface IButtonProps {
   onClick?: () => void;
@@ -11,6 +14,8 @@ interface IButtonProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
 }
+
+const cx = classnames.bind(styles);
 
 export const Button: React.FC<IButtonProps> = (props) => {
   const {
@@ -25,10 +30,12 @@ export const Button: React.FC<IButtonProps> = (props) => {
     rightIcon,
   } = props;
   return (
-    <button type="button" className="Button" onClick={onClick}>
-      {leftIcon && <span>+</span>}
-      {title || children}
-      {rightIcon && <span>+</span>}
+    <button type="button" className={ cx("Button") } onClick={ onClick }>
+      <div className={cx('Button__add')}>
+        { leftIcon || null }
+        { title || children }
+        { rightIcon || null }
+      </div>
     </button>
   );
 };

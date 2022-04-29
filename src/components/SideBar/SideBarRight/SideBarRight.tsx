@@ -7,6 +7,7 @@ import { useAppdispatch, useAppSelector } from "../../../hooks";
 import { Button } from "../../Button/Button";
 import { addCardItem, selectedItem } from "../../../redux/reducer/cardList";
 import { useLocation } from "react-router-dom";
+import { ReactComponent as Plus } from '../../../assets/add_circle_white_24dp.svg';
 import classnames from 'classnames/bind';
 
 import styles from './SideBarRight.module.scss';
@@ -48,9 +49,11 @@ export const SideBarRight: React.FC = () => {
       { currentPath.pathname === '/' ?
         (
           <div className={ cx("SideBardRight") }>
-            <Input value={ value } handlerInput={ handlerInput }/>
-            <DropDown options={ options } getValueSelect={ getValueSelect } selectValue={ selectValue }/>
-            <Button title="CLICK" onClick={ sendDataByClick }/>
+            <div className={ cx('test') }>
+              <Input value={ value } handlerInput={ handlerInput }/>
+              <DropDown options={ options } getValueSelect={ getValueSelect } selectValue={ selectValue }/>
+              <Button title="Add" onClick={ sendDataByClick } leftIcon={ <Plus/> }/>
+            </div>
           </div>
         )
         :

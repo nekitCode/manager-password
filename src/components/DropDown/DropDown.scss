@@ -12,6 +12,7 @@
   // position: relative;
   // margin: 100px auto;
   width: 100%;
+  margin-top: 15px;
   user-select: none;
 
   &__btn {
@@ -28,16 +29,16 @@
   }
 
   &__content {
-    // position: absolute;
+     position: absolute;
     // top: 110%;
     // left: 0;
-    // width: 90%;
     margin-top: 5px;
     padding: 10px;
-    background: #ffff;
-    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+     width: 180px;
     //border-radius: 6px;
     //font-weight: bold;
+    background: #ffff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
     color: #333;
   }
 
