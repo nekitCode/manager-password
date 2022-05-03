@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cardSlice from "../reducer/cardList";
+import passwordSlice from "../reducer/passwordSlice";
 
 const store = configureStore({
   reducer: {
     addCard: cardSlice,
+    addDataPassword: passwordSlice
   },
 });
 

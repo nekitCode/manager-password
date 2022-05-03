@@ -16,7 +16,7 @@ const cx = classnames.bind(styles);
 
 export const SideBarRight: React.FC = () => {
   const currentPath = useLocation();
-  const [value, setValue] = useState('');
+  const [inputValue, setInputValue] = useState('');
   const [selectValue, setSelectValue] = useState<ICard>({
     id: 0,
     typeName: '',
@@ -31,7 +31,7 @@ export const SideBarRight: React.FC = () => {
   const dispatch = useAppdispatch();
 
   const handlerInput = (value: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(value.target.value);
+    setInputValue(value.target.value);
   }
 
   const getValueSelect = (valueSelect: string, data: ICard) => {
@@ -39,20 +39,21 @@ export const SideBarRight: React.FC = () => {
   }
 
   const sendDataByClick = () => {
-    const sendData = {...selectValue, titleName: value, id: cards.length};
-    dispatch(addCardItem(sendData));
-    dispatch(selectedItem(value));
+    const setData = {...selectValue, titleName: inputValue, id: cards.length};
+    dispatch(addCardItem(setData));
+    dispatch(selectedItem(inputValue));
+    setInputValue('');
   }
 
   return (
     <>
-      { currentPath.pathname === '/' ?
+      {currentPath.pathname === '/' ?
         (
-          <div className={ cx("SideBardRight") }>
-            <div className={ cx('test') }>
-              <Input value={ value } handlerInput={ handlerInput }/>
-              <DropDown options={ options } getValueSelect={ getValueSelect } selectValue={ selectValue }/>
-              <Button title="Add" onClick={ sendDataByClick } leftIcon={ <Plus/> }/>
+          <div className={cx("SideBardRight")}>
+            <div className={cx('test')}>
+              <Input value={inputValue} onChange={handlerInput}/>
+              <DropDown options={options} getValueSelect={getValueSelect} selectValue={selectValue}/>
+              <Button title="Add" onClick={sendDataByClick} leftIcon={<Plus/>}/>
             </div>
           </div>
         )
