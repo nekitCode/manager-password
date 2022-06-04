@@ -5,7 +5,7 @@ import passwordSlice from "../reducer/passwordSlice";
 const store = configureStore({
   reducer: {
     addCard: cardSlice,
-    addDataPassword: passwordSlice
+    addDataPassword: passwordSlice,
   },
 });
 

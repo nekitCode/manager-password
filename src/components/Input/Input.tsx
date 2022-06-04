@@ -10,15 +10,14 @@ interface IInputProps {
   value?: string;
   className?: string;
   placeholder?: string;
-
 }
 
 export const Input: React.FC<IInputProps> = (props) => {
-  const {onChange, value, className, placeholder} = props;
+  const { onChange, value, className, placeholder } = props;
   return (
     <input
       type="text"
-      className={cx('Input', className)}
+      className={cx("Input", className)}
       value={value}
       onChange={onChange}
       placeholder={placeholder}

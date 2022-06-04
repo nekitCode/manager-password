@@ -17,12 +17,12 @@ export const cardSlice = createSlice({
       state.titleCard = action.payload;
     },
 
-    deleteItem: (state: ICardState, action: PayloadAction<number>): any => {
+    deleteItem: (state: ICardState, action: PayloadAction<number>) => {
       const index = state.cards.findIndex((todo) => todo.id === action.payload);
       state.cards.splice(index, 1);
-    }
+    },
   },
 });
 
-export const {addCardItem, selectedItem, deleteItem} = cardSlice.actions;
+export const { addCardItem, selectedItem, deleteItem } = cardSlice.actions;
 export default cardSlice.reducer;

@@ -7,60 +7,59 @@ import { useAppdispatch, useAppSelector } from "../../../hooks";
 import { Button } from "../../Button/Button";
 import { addCardItem, selectedItem } from "../../../redux/reducer/cardList";
 import { useLocation } from "react-router-dom";
-import { ReactComponent as Plus } from '../../../assets/add_circle_white_24dp.svg';
-import classnames from 'classnames/bind';
+import { ReactComponent as Plus } from "../../../assets/add_circle_white_24dp.svg";
+import classnames from "classnames/bind";
 
-import styles from './SideBarRight.module.scss';
+import styles from "./SideBarRight.module.scss";
 
 const cx = classnames.bind(styles);
 
 export const SideBarRight: React.FC = () => {
   const currentPath = useLocation();
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState<ICard>({
     id: 0,
-    typeName: '',
-    titleName: '',
-    pathImg: '',
-    pathName: '',
-    color: '',
+    typeName: "",
+    titleName: "",
+    pathImg: "",
+    pathName: "",
+    color: "",
   });
 
-  const cards = useAppSelector(cards => cards.addCard.cards);
+  const cards = useAppSelector((cards) => cards.addCard.cards);
 
   const dispatch = useAppdispatch();
 
   const handlerInput = (value: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(value.target.value);
-  }
+  };
 
   const getValueSelect = (valueSelect: string, data: ICard) => {
     setSelectValue(data);
-  }
+  };
 
   const sendDataByClick = () => {
-    const setData = {...selectValue, titleName: inputValue, id: cards.length};
+    const setData = { ...selectValue, titleName: inputValue, id: cards.length };
     dispatch(addCardItem(setData));
     dispatch(selectedItem(inputValue));
-    setInputValue('');
-  }
+    setInputValue("");
+  };
 
   return (
     <>
-      {currentPath.pathname === '/' ?
-        (
-          <div className={cx("SideBardRight")}>
-            <div className={cx('test')}>
-              <Input value={inputValue} onChange={handlerInput}/>
-              <DropDown options={options} getValueSelect={getValueSelect} selectValue={selectValue}/>
-              <Button title="Add" onClick={sendDataByClick} leftIcon={<Plus/>}/>
-            </div>
+      {currentPath.pathname === "/" ? (
+        <div className={cx("SideBardRight")}>
+          <div className={cx("test")}>
+            <Input value={inputValue} onChange={handlerInput} />
+            <DropDown
+              options={options}
+              getValueSelect={getValueSelect}
+              selectValue={selectValue}
+            />
+            <Button title="Add" onClick={sendDataByClick} leftIcon={<Plus />} />
           </div>
-        )
-        :
-        null
-      }
+        </div>
+      ) : null}
     </>
-
   );
 };

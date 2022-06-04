@@ -1,7 +1,7 @@
 import React from "react";
-import classnames from 'classnames/bind';
+import classnames from "classnames/bind";
 
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
 interface IButtonProps {
   onClick?: () => void;
@@ -30,11 +30,11 @@ export const Button: React.FC<IButtonProps> = (props) => {
     rightIcon,
   } = props;
   return (
-    <button type="button" className={ cx("Button") } onClick={ onClick }>
-      <div className={cx('Button__add')}>
-        { leftIcon || null }
-        { title || children }
-        { rightIcon || null }
+    <button type="button" className={cx("Button")} onClick={onClick}>
+      <div className={cx("Button__add")}>
+        {leftIcon || null}
+        {title || children}
+        {rightIcon || null}
       </div>
     </button>
   );

@@ -1,4 +1,9 @@
-import { CardAction, CardActionType, ICard, ICardState } from "../../../types/cards";
+import {
+  CardAction,
+  CardActionType,
+  ICard,
+  ICardState,
+} from "../../../types/cards";
 
 export function addCards(payload: ICardState): CardAction {
   return { type: CardActionType.ADD_CARD, payload };

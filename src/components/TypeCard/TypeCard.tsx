@@ -21,7 +21,7 @@ export const TypeCard = () => {
         return (
           <React.Fragment key={card.id}>
             <div
-              style={{borderRight: `10px solid ${card.color}`}}
+              style={{ borderRight: `10px solid ${card.color}` }}
               className={cx("card")}
             >
               <div className={cx("description")}>
@@ -34,7 +34,7 @@ export const TypeCard = () => {
                   </div>
                   <div className={cx("name-card")}>
                     <p>{card.titleName}</p>
-                    <p style={{color: card.color}}>{card.typeName}</p>
+                    <p style={{ color: card.color }}>{card.typeName}</p>
                   </div>
                 </div>
                 <div className={cx("card-links")}>
@@ -43,11 +43,13 @@ export const TypeCard = () => {
                       onClick={() => dispatch(selectedItem(card.titleName))}
                     />
                   </Link>
-                  <IconTrash onClick={() => {
-                    dispatch(deleteDataPassword(card.id));
-                    dispatch(deleteItem(card.id));
-                    dispatch(selectedItem(''));
-                  }}/>
+                  <IconTrash
+                    onClick={() => {
+                      dispatch(deleteDataPassword(card.id));
+                      dispatch(deleteItem(card.id));
+                      dispatch(selectedItem(""));
+                    }}
+                  />
                 </div>
               </div>
             </div>

@@ -14,7 +14,7 @@ export interface ICardState {
 
 export enum CardActionType {
   ADD_CARD = "ADD_CARD",
-  ADD_DATA_PASSWORD = 'ADD_DATA_PASSWORD'
+  ADD_DATA_PASSWORD = "ADD_DATA_PASSWORD",
 }
 
 interface IActionAddCard {
