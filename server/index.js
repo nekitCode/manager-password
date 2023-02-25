@@ -4,6 +4,8 @@ const PORT = 3001;
 
 const app = express();
 
+app.use(express.json());
+
 const data = [
   {
     id: 1,
@@ -254,6 +256,8 @@ app.get("/users/:id", (req, res) => {
 
 app.post("/user", (request, response) => {
   console.log(request.body);
+  console.log(response);
+  console.log(request.accepts);
 });
 
 app.listen(PORT, () => {
