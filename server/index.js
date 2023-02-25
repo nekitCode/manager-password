@@ -252,6 +252,10 @@ app.get("/users/:id", (req, res) => {
   res.status(200).json(address);
 });
 
+app.post("/user", (request, response) => {
+  console.log(request.body);
+});
+
 app.listen(PORT, () => {
   console.log(`Server worked on port ${PORT}`);
 });
