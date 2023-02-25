@@ -256,6 +256,8 @@ app.get("/users/:id", (req, res) => {
 
 app.post("/user", (request, response) => {
   console.log(request.body);
+  console.log(response);
+  console.log(request.accepts);
 });
 
 app.listen(PORT, () => {
