@@ -63,4 +63,18 @@
   display: grid;
   height: 100%;
   align-content: space-between;
+
+}
+
+.edit-icon {
+  path: {
+    cursor: pointer
+  }
+}
+
+.trash-icon {
+  cursor: pointer;
+  path: {
+    cursor: pointer
+  }
 }

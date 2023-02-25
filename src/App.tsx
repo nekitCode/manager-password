@@ -5,9 +5,9 @@ import { SideBarRight } from "./components/SideBar/SideBarRight/SideBarRight";
 import { Content } from "./components/Content/Content";
 import { Bank } from "./components/pages/BankPages/Bank";
 import { Card } from "./components/pages/CardPages/Card";
-import classnames from "classnames/bind";
 import { Password } from "./components/pages/PasswordPages/Password";
 
+import classnames from "classnames/bind";
 import styles from "./App.module.scss";
 
 const cx = classnames.bind(styles);

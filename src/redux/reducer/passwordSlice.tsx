@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IValuesPassword, ISetDataPassword } from "../../types/typePassword";
-import { CardActionType } from "../../types/cards";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {IValuesPassword, ISetDataPassword} from "../../types/typePassword";
+import {CardActionType} from "../../types/cards";
 
 const dataPassword: ISetDataPassword = {
   data: [],
@@ -16,6 +16,20 @@ export const passwordSlice = createSlice({
     ) => {
       state.data.push(action.payload);
     },
+    editDataPassword(state: ISetDataPassword, action: PayloadAction<IValuesPassword>) {
+      state.data = state.data.map((current) => current.id === action.payload.id
+        ?
+        {
+          ...current,
+          id: action.payload.id,
+          name: action.payload.name,
+          account: action.payload.account,
+          password: action.payload.password,
+          websiteLink: action.payload.websiteLink
+        }
+        :
+        current);
+    },
     deleteDataPassword: (
       state: ISetDataPassword,
       action: PayloadAction<number>
@@ -30,5 +44,5 @@ export const passwordSlice = createSlice({
   },
 });
 
-export const { addDataPassword, deleteDataPassword } = passwordSlice.actions;
+export const {editDataPassword, addDataPassword, deleteDataPassword} = passwordSlice.actions;
 export default passwordSlice.reducer;

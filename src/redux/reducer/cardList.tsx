@@ -13,6 +13,7 @@ export const cardSlice = createSlice({
     addCardItem: (state: ICardState, action: PayloadAction<ICard>) => {
       state.cards.push(action.payload);
     },
+
     selectedItem: (state: ICardState, action: PayloadAction<string>) => {
       state.titleCard = action.payload;
     },

@@ -16,6 +16,7 @@ const cx = classnames.bind(styles);
 
 export const SideBarRight: React.FC = () => {
   const currentPath = useLocation();
+  const pathHome = currentPath.pathname === "/";
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState<ICard>({
     id: 0,
@@ -47,7 +48,7 @@ export const SideBarRight: React.FC = () => {
 
   return (
     <>
-      {currentPath.pathname === "/" ? (
+      {pathHome ? (
         <div className={cx("SideBardRight")}>
           <div className={cx("test")}>
             <Input value={inputValue} onChange={handlerInput} />

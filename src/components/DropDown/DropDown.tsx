@@ -19,10 +19,16 @@ export const DropDown: React.FC<IInputSelect> = (props) => {
     setIsActive((active) => !active);
   };
 
+  const getValueDropdown = (event: MouseEvent<HTMLDivElement>, name: ICard) => {
+    const innerText = event.target as HTMLElement;
+    getValueSelect(innerText.innerText, name);
+    setIsActive((isActive) => !isActive);
+  };
+
   return (
     <div className="dropdown">
       <div className="dropdown__btn" onClick={handlerDropDown}>
-        {selectValue.typeName || "..."}
+        {selectValue.typeName || "select value"}
         <IconComponent pathIcon={ICON_MAP[EIconTypes.ARROW_DOWN]} />
       </div>
       {isActive && (
@@ -31,11 +37,7 @@ export const DropDown: React.FC<IInputSelect> = (props) => {
             <div
               className="dropdown__item"
               key={name.typeName}
-              onClick={(event: MouseEvent<HTMLDivElement>) => {
-                const innerText = event.target as HTMLElement;
-                getValueSelect(innerText.innerText, name);
-                setIsActive((isActive) => !isActive);
-              }}
+              onClick={(event) => getValueDropdown(event, name)}
             >
               <span
                 style={{ background: name.color }}
