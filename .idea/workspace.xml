@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0184d8f9-8a5c-46e0-8556-7fbd56a6c087" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropDown/DropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropDown/DropDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarLeft/SideBarLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarLeft/SideBarLeft.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarRight/SideBarRight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarRight/SideBarRight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/PasswordPages/DataForm/DataForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/PasswordPages/DataForm/DataForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/PasswordPages/Password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/PasswordPages/Password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/cardList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer/passwordSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/passwordSlice.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IYpXkRuw8hPiveG9u5q2rYVI6X" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/React/manager-password&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\React\\manager-password\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0184d8f9-8a5c-46e0-8556-7fbd56a6c087" name="Changes" comment="" />
+      <created>1670368412897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670368412897</updated>
+      <workItem from="1670368415091" duration="787000" />
+      <workItem from="1670977422163" duration="373000" />
+      <workItem from="1671200958793" duration="26000" />
+      <workItem from="1671492586299" duration="868000" />
+      <workItem from="1672125502976" duration="689000" />
+      <workItem from="1672411780865" duration="384000" />
+      <workItem from="1672517771723" duration="18000" />
+      <workItem from="1673038823528" duration="67000" />
+      <workItem from="1675079183083" duration="475000" />
+      <workItem from="1675080283247" duration="5983000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
