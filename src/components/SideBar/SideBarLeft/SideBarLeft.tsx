@@ -10,6 +10,10 @@ export const SideBarLeft = () => {
       <div>SideBar</div>
       <div>new block</div>
       <div>new block2</div>
+      <div>new block3</div>
+      <div>new block4</div>
+      <div>new block5</div>
+      <div>new block6</div>
     </div>
   );
 };
