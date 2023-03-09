@@ -8,6 +8,8 @@ export const SideBarLeft = () => {
   return (
     <div className={cx("SideBarLeft")}>
       <div>SideBar</div>
+      <div>new block</div>
+      <div>new block2</div>
     </div>
   );
 };
