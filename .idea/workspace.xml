@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0184d8f9-8a5c-46e0-8556-7fbd56a6c087" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropDown/DropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropDown/DropDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarLeft/SideBarLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarLeft/SideBarLeft.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarRight/SideBarRight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarRight/SideBarRight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TypeCard/TypeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/PasswordPages/DataForm/DataForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/PasswordPages/DataForm/DataForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/PasswordPages/Password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/PasswordPages/Password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer/passwordSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/passwordSlice.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="0184d8f9-8a5c-46e0-8556-7fbd56a6c087" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +55,7 @@
       <workItem from="1673038823528" duration="67000" />
       <workItem from="1675079183083" duration="475000" />
       <workItem from="1675080283247" duration="5983000" />
+      <workItem from="1677423134246" duration="609000" />
     </task>
     <servers />
   </component>
